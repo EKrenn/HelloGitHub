@@ -10,6 +10,8 @@ public class uebung1 extends HelloGitHub {
 		System.out.println("Fahrenheit: "+tempF);
 		double tempC = fahrenheit2Celsius(72.5);
 		System.out.println("Celsius: "+tempC);
+		System.out.println("Celsius: "+tempC);
+		System.out.println("Celsius: "+tempC);
 
 	}
 	public static String printRectangleArea(String text, int a, int b)
