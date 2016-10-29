@@ -49,6 +49,8 @@ public class OperatorsArithmetic {
 		double celsius = (fahrenheit - 32) / (9.0/5);
 		return celsius;
 	}
+	// Neue Übung
+	
 	
 	
 
