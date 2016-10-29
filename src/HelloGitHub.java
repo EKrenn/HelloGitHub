@@ -11,6 +11,8 @@ public class HelloGitHub {
 		System.out.println(isSunny);
 		System.out.println("Hello GitHub von mir 2");
 		
+		System.out.println("Hello GitHub von mir 2");
+		
 		
 
 	}
