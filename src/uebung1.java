@@ -3,14 +3,12 @@ public class uebung1 extends HelloGitHub {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String result = printRectangleArea("Die Fl‰che ist: ", 3, 4);
+		String result = printRectangleArea("Die Fl√§che ist: ", 3, 4);
 		System.out.println(result);
 		
 		double tempF = celsius2Fahrenheit(26.0);
 		System.out.println("Fahrenheit: "+tempF);
 		double tempC = fahrenheit2Celsius(72.5);
-		System.out.println("Celsius: "+tempC);
-		System.out.println("Celsius: "+tempC);
 		System.out.println("Celsius: "+tempC);
 
 	}
