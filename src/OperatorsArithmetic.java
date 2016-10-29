@@ -3,8 +3,9 @@ public class OperatorsArithmetic {
 	
 	
 	public static void main(String[] args) {
-		
-		
+
+		int a;
+
 		String result = printRectangleArea("Die Fläche ist: ", 3, 4);
 		System.out.println(result);
 		
