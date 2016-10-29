@@ -3,9 +3,7 @@ public class OperatorsArithmetic {
 	
 	
 	public static void main(String[] args) {
-		double tempF = celsius2Fahrenheit(26.0);
-		System.out.println("Die heutige Temperatur ist in Fahrenheit: "+tempF);
-		
+		int a;
 		String result = printRectangleArea("Die Fläche ist: ", 3, 4);
 		System.out.println(result);
 		
