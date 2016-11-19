@@ -17,7 +17,7 @@ public class Verwaltung {
 		System.out.println(student.vorname + " " + student.nachname + " " + student.alter);
 		*/
 		/* Variante mit Methoden */
-		methodePerson("Max", "Mustermann", 39);
+		methodePerson("Peter", "Mustermann", 39);
 		methodeAdresse("Hauptplatz", 33, 8010, "Graz");
 	}
 	public static void methodePerson(String vorname, String nachname, int alter)
@@ -26,8 +26,10 @@ public class Verwaltung {
 		student.vorname = vorname;
 		student.nachname = nachname;
 		student.alter = alter;
+		//student.setAdresse("Hauptplatz", 33, 8010, "Graz");
 		//String ausgabe = vorname + " " + nachname + " " + alter; 
-		System.out.println("Name: " + vorname + " " + nachname + " " + alter);
+		System.out.println("Name: " + vorname + " " + nachname + ", Alter: " + alter);
+		//System.out.println(student.setAdresse("Hauptplatz", 33, 8010, "Graz"));
 	}
 	public static void methodeAdresse(String strasse, int hausnummer, int plz, String stadt)
 	{
@@ -39,5 +41,13 @@ public class Verwaltung {
 		System.out.println("Straﬂe: " + strasse + " " + hausnummer);
 		System.out.println("PLZ Ort: " + plz + " " + stadt);
 	}
+	/*
+	public static void getAdresse()
+	{
+		Person student = new Person();
+		student.setAdresse("Hauptplatz", 33, 8010 , "Stadt");
+		//System.out.println(student.setAdresse("Hauptplatz", 33, 8010 , "Stadt"));
+	}
+	*/
 
 }
