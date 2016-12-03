@@ -1,3 +1,4 @@
+package ueAbend;
 
 public class LohnBonusAbrechnung {
 	private String vorname;
