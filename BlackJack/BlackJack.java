@@ -1,13 +1,13 @@
+import java.util.Collection;
 import java.util.HashMap;
-import java.util.Map;
 
 public class BlackJack {
 	
-	private Map<Player, Integer> players = new HashMap<Player, Integer>();
+	private HashMap<Player, Integer> players = new HashMap<Player, Integer>();
 	
 	public boolean add(Player player)
 	{
-		if (players.equals(player))
+		if (players.containsKey(player))
 		{
 			players.put(player, 0);
 			return true;
@@ -17,9 +17,11 @@ public class BlackJack {
 	
 	public boolean addCard(Player player, Integer cardValue)
 	{
+		Integer newValue = players.get(player);
 		if(players.equals(player))
 		{
-			//players.
+			newValue = newValue + cardValue;
+			return true;
 		}
 		return false;
 	}
@@ -31,7 +33,8 @@ public class BlackJack {
 
 	@Override
 	public String toString() {
-		return "BlackJack [players=" + players + "]";
+		//return players + " Kartenwert: " + getValue(players);
+		return "";
 	}
 	
 	
