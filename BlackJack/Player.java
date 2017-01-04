@@ -33,7 +33,7 @@ public class Player {
 	}
 	@Override
 	public String toString() {
-		return "Player [name=" + name + ", age=" + age + "]";
+		return "Name of player: " + name + " | age of player: " + age;
 	}
 	public Player(String name, int age) {
 		super();
