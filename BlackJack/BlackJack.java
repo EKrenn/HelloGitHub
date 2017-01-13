@@ -7,30 +7,34 @@ public class BlackJack {
 	
 	public boolean add(Player player)
 	{
+		// Map Player mit dem übergebenen player vergleichen --> wenn ein Player hinzugefügt wurde
+		// dann false, weil der Spieler dann schon existiert, sonst noch nicht
+		// equals vergleich Map mit Map
+		// containsKey vergleicht Keys miteinander
 		if (players.containsKey(player))
 		{
-			players.put(player, 0);
-			return true;
+			return false;
 		}
-		return false;
+		players.put(player, 0);
+		return true;
 	}
 	
 	public boolean addCard(Player player, Integer cardValue)
 	{
 		Integer newValue = players.get(player);
-		if(players.equals(player))
+		if(players.containsKey(player))
 		{
-			newValue = newValue + cardValue;
+			players.put(player, newValue + cardValue);
 			return true;
 		}
 		return false;
+		
 	}
 	
 	public Integer getValue(Player player)
 	{
-		if(players.equals(player))
+		if(players.containsKey(player))
 		{
-			System.out.println("getValue of player: " + players.get(player));
 			return players.get(player);
 		}
 		return null;
@@ -38,31 +42,13 @@ public class BlackJack {
 
 	@Override
 	public String toString() {
-		/*
-		// neue Variable der Klasse Player erzeugen, und null setzen
-		Player found = null; 
-		for(Player p : players.)
+		String text = "";
+		// Schleife über die Klasse Player und alle KeySet retour erhalten
+		for(Player p : players.keySet())
 		{
-			found = p; 
-		}*/
-		return "Spieler: " + players.toString() + " Kartenwert: "; // + getValue(players);
-		//return "";
-		/*
-		Employee found = null;
-		// Durchlaufe die Liste
-		for(Employee e : employee)
-		{
-			// Wenn das aktuelle Gehalt größer als Max?
-			if(e.getSalary() > max)
-			{
-				// Wenn ja: Max = das neue größere Gehalt
-				max = e.getSalary();
-				// und der Employee (found) = der aktuelle Mitarbeiter
-				found = e;
-			}
+			text = text + p.getName() + ", Kartenwert: " + players.get(p) + "\n";
 		}
-		// liefert den Mitarbeiter zurück
-		return found; */
+		return text;
 	}
 	
 	
