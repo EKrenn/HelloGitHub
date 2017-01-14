@@ -32,6 +32,7 @@ public class DemoHase {
 		for(Hase list : hasen)
 		{
 			hase.fressen();
+			System.out.println("TEst");
 		}
 
 	}
