@@ -57,6 +57,12 @@ public class EmployeeManager {
 		return found;
 		
 	}
+	public ArrayList<Employee> returnList()
+	{
+		for(int i = 0; i < employee.size(); i++)
+			employee.get(i);
+		return employee;
+	}
 	
 
 }

@@ -31,7 +31,7 @@ public class Person {
 		result = prime * result + ((lastname == null) ? 0 : lastname.hashCode());
 		return result;
 	}
-
+/* nur ausgeklammert wegen der Klasse PersonVer
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
@@ -40,7 +40,7 @@ public class Person {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Person other = (Person) obj;
+		PersonVer other = (PersonVer) obj;
 		if (firstname == null) {
 			if (other.firstname != null)
 				return false;
@@ -53,6 +53,7 @@ public class Person {
 			return false;
 		return true;
 	}
+	*/
 	
 	
 
