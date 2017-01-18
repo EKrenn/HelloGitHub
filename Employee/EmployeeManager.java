@@ -4,6 +4,7 @@ public class EmployeeManager {
 	
 	private ArrayList<Employee> employee = new ArrayList<>();
 	
+	
 	public void addEmployee(Employee e)
 	{
 		employee.add(e);
@@ -56,6 +57,12 @@ public class EmployeeManager {
 		}
 		return found;
 		
+	}
+	public ArrayList<Employee> returnList()
+	{
+		for(int i = 0; i < employee.size(); i++)
+			employee.get(i);
+		return employee;
 	}
 	
 
