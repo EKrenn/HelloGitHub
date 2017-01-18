@@ -18,7 +18,8 @@ public class EmployeeDemo {
 		Employee m5 = new Employee(6, "Mitarbeiter5", 2000.0, "IT", "HR", m1);
 		
 		//System.out.println(org.getChainOfCommand(m5));
-		System.out.println(org.processHierarchy(m4));
+		//System.out.println(org.getChainOfCommandCount(m3, 0));
+		System.out.println(org.processHierarchy(m1));
 		
 	}
 
