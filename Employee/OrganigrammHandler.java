@@ -19,12 +19,13 @@ public class OrganigrammHandler {
 		
 		if(emp.getSuperior() != null)
 		{
-			return "+ " + ausgabe;
+			return "+ " + ausgabe + processHierarchy(emp.getSuperior());
 		}
 		else
 		{
 			return "- " + ausgabe + processHierarchy(emp.getSuperior());
 		}
+		//return ausgabe;
 		
 	}
 
