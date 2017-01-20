@@ -60,8 +60,8 @@ public class EmployeeManager {
 	}
 	public ArrayList<Employee> returnList()
 	{
-		for(int i = 0; i < employee.size(); i++)
-			employee.get(i);
+		//for(int i = 0; i < employee.size(); i++)
+			//employee.get(i);
 		return employee;
 	}
 	

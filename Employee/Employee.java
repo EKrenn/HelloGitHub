@@ -73,6 +73,7 @@ public class Employee {
 	{
 		subordinates.add(emp);
 	}
+	
 	public Employee(int empNumber, String name, double salary, String department, String role, Employee superior) {
 		super();
 		this.empNumber = empNumber;
