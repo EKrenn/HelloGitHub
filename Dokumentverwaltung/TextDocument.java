@@ -1,7 +1,7 @@
 
 public class TextDocument extends Document {
 
-	private static String content;
+	private String content;
 	
 	public TextDocument(String fileName) {
 		super(fileName);
@@ -13,7 +13,9 @@ public class TextDocument extends Document {
 		super(fileName);
 		this.content = content;
 	}
-	public static void printDocument()
+	
+	@Override
+	public void printDocument()
 	{
 		System.out.println("TextDocument: " + fileName + " => " + content);
 	}

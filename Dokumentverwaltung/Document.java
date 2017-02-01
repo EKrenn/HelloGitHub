@@ -1,15 +1,20 @@
 
 public class Document {
-	protected static String fileName;
+	protected String fileName;
 	
 	public Document(String fileName) {
 		super();
 		this.fileName = fileName;
 	}
 
-	public static void printDocument()
+	public void printDocument()
 	{
-		System.out.println(fileName);
+		System.out.println("Document: " + fileName + " printing");
+	}
+	
+	public String getFileName()
+	{
+		return this.fileName;
 	}
 
 }

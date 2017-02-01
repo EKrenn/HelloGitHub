@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class CsvDocument extends Document {
 		
-	private static ArrayList<String> lines = new ArrayList<String>();
+	private ArrayList<String> lines = new ArrayList<String>();
 	
 	public CsvDocument(String fileName) {
 		super(fileName);
@@ -15,16 +15,24 @@ public class CsvDocument extends Document {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public static void addLine(String line)
+	public void addLine(String line)
 	{
 		lines.add(line);
 	}
-	public static void printDocument()
+	
+	@Override
+	public void printDocument()
 	{
-		for(int i = 0; i < lines.size(); i++)
+		
+		System.out.println("CsvDocument: " + fileName);
+		for(String string : lines)
+			System.out.println(string);
+		
+		/*for(int i = 0; i < lines.size(); i++)
 		{
 			System.out.println("TextDocument: " + fileName + " => " + lines.get(i));
 		}
+		*/
 		
 	}
 

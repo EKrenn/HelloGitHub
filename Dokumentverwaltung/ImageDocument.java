@@ -1,8 +1,8 @@
 
 public class ImageDocument extends Document {
-	private static int sizeX;
-	private static int sizeY;
-	private static String colour;
+	private int sizeX;
+	private int sizeY;
+	private String colour;
 	
 	public ImageDocument(String fileName)
 	{
@@ -15,9 +15,11 @@ public class ImageDocument extends Document {
 		this.sizeY = sizeY;
 		this.colour = colour;
 	}
-	public static void printDocument()
+	
+	@Override
+	public void printDocument()
 	{
-		System.out.println("TextDocument: " + fileName + " => " + sizeX + ", " + sizeY + ", " + 
+		System.out.println("ImageDocument: " + fileName + " => " + sizeX + ", " + sizeY + ", " + 
 				colour);
 	}
 
