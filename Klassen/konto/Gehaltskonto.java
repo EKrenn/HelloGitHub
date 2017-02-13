@@ -39,30 +39,41 @@ public class Gehaltskonto {
 
 		if(bebuchterWert > 0)
 		{
-			this.kontostand = this.kontostand + bebuchterWert;
+			this.kontostand = kontostand + bebuchterWert;
 		}
 		else
 		{
 			System.out.println("Wert <= 0 kann nicht bebucht werden.");
 		}
-		getKontostand();
+		//getKontostand();
+		//System.out.println(bebuchterWert);
 	}
 	public void abbuchen(double abgebuchterWert)
 	{
+		if(kontostand - abgebuchterWert < 0)
+		{
+			System.out.println(inhaber + " kann den Wert " + abgebuchterWert + " nicht abbuchen, da Kontostand  nach Abbuchung < 0");
+		}
+		else
+		{
+			kontostand = kontostand - abgebuchterWert;
+		}
+		
+		/*
 		double neuerWert = this.kontostand - abgebuchterWert;
 		if (neuerWert < 0)
 		{
-			System.out.println("Kontostand <= 0 --> Abhebung nicht möglich.");
+			System.out.println(inhaber + " Kontostand <= 0 --> Abhebung nicht möglich.");
 		}
 		else
 		{
 			neuerWert = neuerWert - this.kontostand;
-		}
-		getKontostand();
+		}*/
+		//getKontostand();
 	}
 	public void getKontostand()
 	{
-		System.out.println("Kontoinhaber: " + this.inhaber + " | aktueller Kontostand: " + this.kontostand);
+		System.out.println("Kontoinhaber: " + this.inhaber + " | aktueller Kontostand: " + kontostand);
 	}
 
 }

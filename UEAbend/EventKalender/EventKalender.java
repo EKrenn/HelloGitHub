@@ -57,7 +57,7 @@ public class EventKalender {
 		Event found = null;
 		for(Event e : liste)
 		{
-			if(e.getEintrittspreis() > preis)
+			if(e.getEintrittspreis() > preis && e.getOrt().equals(ort))
 			{
 				found = e;
 				// e.get... oder found.get... == gleiches Ergebnis

@@ -53,7 +53,6 @@ public class Konto {
 			this.kontostand = kontostand + bebuchterWert;
 		}
 		
-		//System.out.println("bebucht: " + this.kontostand);
 	}
 	public boolean abbuchen(double abgebuchterWert)
 	{
@@ -91,6 +90,11 @@ public class Konto {
 		{
 			return false;
 		}
+		if(kontostand - abgebuchterWert < 0)
+		{
+			return false;
+		}
+		kontostand = kontostand - abgebuchterWert;
 		return true;
 	}
 	public void print()

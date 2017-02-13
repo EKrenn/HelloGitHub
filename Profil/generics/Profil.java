@@ -7,7 +7,7 @@ public class Profil {
 	private String nachname;
 	private String email;
 	private MayBeInt alter;
-	private MayBeInt gehalt;
+	private MayBe<Double> gehalt;
 	private String passwort;
 	private MayBe<String> bezStatus;
 	private int plz;
@@ -15,7 +15,7 @@ public class Profil {
 	
 	// Konstruktor mit den Werten, die einzugeben sind
 	// bei verwendung von anderen Klassen (MayBeInt) ist dies auch als Typ zu übergeben
-	public Profil(String vorname, String nachname, String email, MayBeInt alter, MayBeInt gehalt, MayBe<String> bezStatus, MayBe<GregorianCalendar> gebDatum)
+	public Profil(String vorname, String nachname, String email, MayBeInt alter, MayBe<Double> gehalt, MayBe<String> bezStatus, MayBe<GregorianCalendar> gebDatum)
 	{
 		this.vorname = vorname;
 		this.nachname = nachname;

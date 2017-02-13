@@ -54,7 +54,9 @@ public class Ort {
 		}
 		
 		return false;
+		
 	}
+	
 	/*
 	public int countHops(Ort o, Ort d)
 	{

@@ -38,9 +38,9 @@ public class Kontoausgabe {
 			
 			
 			//String[] inhaber = {"Max Mustermann", "Susi Sorglos"};
-			Konto[] konten = new Konto[1000];
+			//Konto[] konten = new Konto[1000];
 			
-			konten[0] = kunde1;
+			//konten[0] = kunde1;
 			
 			//System.out.println(kunde1);
 			

@@ -40,7 +40,7 @@ public class Bruch {
 		//Berechnung OK, lange Methode
 		int nenner = this.nenner * b2.nenner;
 		int zaehler = this.zaehler * b2.zaehler;		
-		b2 = new Bruch(nenner, zaehler);
+		b2 = new Bruch(zaehler, nenner);
 		return b2;
 		
 		// Kurze Form
@@ -51,7 +51,7 @@ public class Bruch {
 		//Berechnung OK, lange Methode
 		int nenner = this.nenner * b2.nenner * b3.nenner;
 		int zaehler = this.zaehler * b2.zaehler * b3.zaehler;		
-		return new Bruch(nenner, zaehler);
+		return new Bruch(zaehler, nenner);
 				
 				// Kurze Form
 		//return new Bruch(this.nenner * b2.nenner * b3.nenner, this.zaehler * b2.zaehler * b3.zaehler);
